@@ -3,92 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-
+    <title>EXEMPLO 2</title>
 
     <style>
-        h1
-          {
-        color:aqua;
-        background-color: blueviolet;
-        text-align: center;
-        border:2px solid rebeccapurple;
-    
-          }
-          
+        h1{
+            background-color: rgb(89, 255, 0);
+            color: black;
+            text-align: center;
+        }
+
+        table, th,td
+        {
+            border: 3px solid rgb(0, 0, 0);
+            border-collapse: collapse;
+            padding: 5px;    
+         }
+         
+         th
+         {
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 0, 0);
+         }
     </style>
-</body>
 
-</html>
-  <h1>aula 08 - exercicio 2 </h1>
-<p>
-    exercicio de colspan
-</p>
+</head>
+<body>
+    <H1>AULA 08 - EXERCÍCIO 2</H1>
 
-<table>
-<tr>
-    <td> dia da semana </td>
-    <td>truma</td>
-<td> aula 1</td>
-<td> aula 02</td>
-<td>aula 3</td>
-<td>aula 4</td>
-<td>aula 5 </td>
-<td> aula 6</td>
+    <h3>Exercício de Colspan</h3>
 
-</tr>
-<tr>
-<td> seguanda </td>
-<td>A/B</td>
-<td>IW</td>
-<td>EACNT</td>
-<td>AD/PW</td>
-<td>FISICA</td>
-<td>AD/PA</td>
-</tr>
+    <table>
+      <tr>
+      <th> Dia da Semana</th>
+      <th>Turma </th>
+      <th>Aula 1</th>
+      <th>Aula 2</th>
+      <th>Aula 3</th>
+      <th>Aula 4</th>
+      <th>Aula 5</th>
+      <th>Aula 6</th>
+      </tr>
 
-<tr>
-    <td>terça </td>
-    <td>A/B</td>
-    <td>PORTUGUES</td>
-    <td>PE</td>
-    <td>FISICA</td>
-    <td>INGLES</td>
+      <tr>
+        <td>Segunda-feira</td>
+        <td>A/B</td>
+        <td colspan="2">IW</td>
+        <td>EACNT</td>
+        <td>AD/APW</td>
+        <td>Física</td>
+        <td>AD/PA</td>
+        
+      </tr>
 
-</TR>
+      <tr>
+        <td>Terça-feira</td>
+        <td>A/B</td>
+        <td>Português</td>
+        <td colspan="2">PE</td>
+        <td>Física</td>
+        <td colspan="2">Inglês</td>
+      </tr>
 
-<TR>
-    <td>quarta</td>
-    <td>a/b</td>
-    <td>portugues</td>
-    <td>fi/pa</td>
-    <td>pa/fi</td>
+      <tr>
+        <td>Quarta-feira</td>
+        <td>A/B</td>
+        <td colspan="2">Português</td>
+        <td colspan="2">FI/PA</td>
+        <td colspan="2">PA/FI</td>
+      </tr>
+    </table>
 
+    <h3>Exercício de rowspan e colspan</h3>
 
+    <table>
+        <tr>
+            <th> Dia da Semana</th>
+            <th>Turma </th>
+            <th>Aula 1</th>
+            <th>Aula 2</th>
+            <th>Aula 3</th>
+            <th>Aula 4</th>
+            <th>Aula 5</th>
+             <th>Aula 6</th>
+        </tr>
 
-</TR>
+        <tr>
+            <td rowspan="2">Domingo</td>
+            <td>A</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            
+        </tr>
 
+        <tr>
+          <td>B</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
 
+        </tr>
 
-</table>
+        <tr>
+          <td rowspan="2">Segunda</td>
+          <td>A</td>
+          <td colspan="2">Guilherme</td>
+          <td>Vagner</td>
+          <td>Rafael</td>
+          <td rowspan="2">Vagner</td>
+          <td>Rafael </td>
+         </tr>
 
+      <tr>
+        <td>B</td>
+        <td colspan="2">Andricson</td>
+        <td>Janete</td>
+        <td>Ronaldo</td>
+        <td>Andricson</td>
+      </tr>
 
-<style>
-    h1
-      {
-    color:aqua;
-    background-color: blueviolet;
-    text-align: center;
-    border:2px solid rebeccapurple;
+      <tr>
+        <td rowspan="2" >Terça</td>
+        <td>A</td>
+        <td rowspan="2">Isabela</td>
+        <td colspan="2" rowspan="2">Jaqueline</td>
+        <td rowspan="2">Vagner</td>
+        <td colspan="2" rowspan="2">Celene </td>
+       </tr>
 
-      }
+    <tr>
+  
+      <td>B</td>
       
-</style>
-</body>
-<p>exercicio de rowpan e colspan</p>
+      
+
+    </tr>
 
 
+    </table>
 </body>
 </html>
